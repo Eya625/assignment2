@@ -61,62 +61,62 @@ body {
 
 /* Header styles */
 header {
-    background-color: #333; /* Set your header background color */
-    color: white; /* Set your header text color */
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 /* Main content styles */
 main {
-    display: flex; /* Display sections side by side in desktop view */
-    justify-content: space-between; /* Add space between sections */
-    flex-wrap: wrap; /* Wrap sections to the next row on smaller screens */
-    margin: 20px; /* Add space between the sections and the browser window */
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 .section {
-    flex: 1; /* Equal width for all sections */
-    margin: 10px; /* Add space between sections */
-    position: relative; /* For section title positioning */
-    background-color: #f2f2f2; /* Set your section background color */
-    border: 1px solid black; /* Add a black border to sections */
-    padding: 20px; /* Add space between text and section borders */
-    box-sizing: border-box; /* Include padding in the width */
+    flex: 1; 
+    margin: 10px;
+    position: relative; 
+    background-color: #f2f2f2; 
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/* Section title region styles */
+
 h2 {
     position: absolute;
-    top: 10px; /* Adjust vertical position */
-    right: 10px; /* Adjust horizontal position */
-    background-color: #666; /* Set your section title background color */
-    color: white; /* Set your section title text color */
-    padding: 5px 10px; /* Add space around section titles */
+    top: 10px; 
+    right: 10px; 
+    background-color: #666;
+    color: white; 
+    padding: 5px 10px; 
 }
 
-/* Media queries for responsive design */
 @media (max-width: 991px) {
     .section {
-        flex: 1; /* Equal width for all sections in tablet view */
-        margin: 10px; /* Add space between sections */
-    }
+        flex: 1; 
+        margin: 10px;
     h2 {
-        top: 10px; /* Adjust vertical position for tablet view */
+        top: 10px; 
+    }
+
     }
 }
 
 @media (max-width: 767px) {
     .section {
-        flex: 1; /* Full width for all sections in mobile view */
-        margin: 10px 0; /* Add space between sections */
+        flex: 1; 
+        margin: 10px 0; 
     }
     h2 {
-        position: static; /* Reset title position for mobile view */
-        background-color: #666; /* Set your section title background color */
-        color: white; /* Set your section title text color */
-        text-align: center; /* Center-align section titles */
-        margin-top: 10px; /* Adjust spacing above section titles */
+        position: static;
+        background-color: #666;
+        color: white; 
+        text-align: center; 
+        margin-top: 10px;
     }
 }
 
